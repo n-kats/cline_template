@@ -1,6 +1,11 @@
 # 使い方
 ``` bash
-pipx run cookiecutter git@github.com:n-kats/cline_template.git
+$ pipx run cookiecutter git@github.com:n-kats/cline_template.git
+# 質問に答える
+
+$ cd <project_slug>
+$ git init && git commit --allow-empty -m "first commit"
+$ code .
 ```
 
 ## cookiecutter のtips
