@@ -1,5 +1,5 @@
 [project]
-name = "template-project"
+name = "{{cookiecutter.project_name}}"
 dynamic = ["version"]
 description = "Add your description here"
 readme = "README.md"
@@ -19,6 +19,9 @@ dev = [
 [build-system]
 requires = ["hatchling", "uv-dynamic-versioning"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["{{cookiecutter.package_name}}"]
 
 [tool.hatch.version]
 source = "uv-dynamic-versioning"
