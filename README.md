@@ -5,14 +5,12 @@ pipx run cookiecutter git@github.com:n-kats/cline_template.git
 
 ## cookiecutter のtips
 ### デフォルトの設定値を変更したい。
-`~/.cookiecutterrc` に以下を追加してください。
+`~/.cookiecutterrc` に以下を追加してください（具体的な変数の一覧は[./cookiecutter.json](./cookiecutter.json)を見てください）。
 
 ``` yaml
 default_context:
-  project_name: "project_name"
-  author_name: "author_name"
-  author_email: "author_email"
-  github_username: "github_username"
+  project_slug: "project_slug"
+  python_version: "3.8"
 ```
 
 ### 会社用と個人用で .cookiecutterrc を分けたい。
