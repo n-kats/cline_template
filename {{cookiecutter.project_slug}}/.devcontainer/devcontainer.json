@@ -19,7 +19,8 @@
         "matangover.mypy",
         "charliermarsh.ruff",
         "njpwerner.autodocstring",
-        "cline.cline"
+        "cline.cline",
+        "kurusugawa-computer.markdown-copilot"
       ],
       "settings": {
         "python.defaultInterpreterPath": ".venv/bin/python",
